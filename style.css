@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('./assets/Norse-Bold.otf') format('opentype');
+}
+
+:root {
+ --green: #596D48;
+ --light-gray: #E5E7EB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+}
+
+.img {
+  width: 40%;
+  background-image: url('./assets/sidebar_bg_img.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  height: 125px;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
+.odin-logo {
+  height: 100px;
+}
+
+.odin-logo-text {
+  text-transform: uppercase;
+  font-family: 'Norse Bold';
+  color: white;
+  font-size: 96px;
+}
+
+.credit {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.credit a {
+  color: inherit;
+}
+
